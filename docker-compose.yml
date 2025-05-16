@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  react-email-app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      EMAIL: "your-email-for-nodemailer"
+      PASS: "email_password_in_env_file_for_nodemailer"
+
+
+# docker-compose up --build
